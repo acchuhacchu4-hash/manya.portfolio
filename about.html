@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me | Manya.D</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 4rem;
+            align-items: start;
+        }
+        .info-card h3 {
+            color: var(--secondary-color);
+            margin-bottom: 1rem;
+        }
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        .skill-tag {
+            background: var(--primary-color);
+            color: var(--text-dark);
+            padding: 0.5rem 1.2rem;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+        .language-item {
+            margin-bottom: 1.5rem;
+        }
+        .progress-bar {
+            background: #eee;
+            height: 10px;
+            border-radius: 5px;
+            margin-top: 0.5rem;
+            overflow: hidden;
+        }
+        .progress-fill {
+            background: var(--secondary-color);
+            height: 100%;
+            border-radius: 5px;
+            width: 0;
+            transition: width 1.5s ease;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">MANYA.D</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="certification.html">Certification</a></li>
+        </ul>
+        <a href="resume.jpg" download class="btn btn-primary">Download Resume</a>
+    </nav>
+
+    <main class="container">
+        <section>
+            <h1 class="fade-in">About Me</h1>
+            <br>
+            <div class="about-grid">
+                <div class="fade-in stagger-1">
+                    <div class="card">
+                        <h3>Contact Details</h3>
+                        <p><i class="fas fa-phone"></i> 8431529282</p>
+                        <p><i class="fas fa-envelope"></i> sanjumanya21@gmail.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> TIPTUR (T), Tumkur (D) 52201</p>
+                    </div>
+                </div>
+                <div class="fade-in stagger-2">
+                    <h2>Professional Profile</h2>
+                    <p>I currently bachelor of computer applications. Consider myself a responsible and orderly person. I am looking forward to my first work experience where I can apply my theoretical knowledge and contribute to innovative projects.</p>
+                    
+                    <br><br>
+                    
+                    <div class="about-grid" style="grid-template-columns: 1fr 1fr;">
+                        <div>
+                            <h3>Computer Skills</h3>
+                            <div class="skills-list">
+                                <span class="skill-tag">Java</span>
+                                <span class="skill-tag">Python</span>
+                                <span class="skill-tag">HTML/CSS</span>
+                                <span class="skill-tag">C++</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h3>Languages</h3>
+                            <div class="language-item">
+                                <span>English</span>
+                                <div class="progress-bar"><div class="progress-fill" style="width: 90%;"></div></div>
+                            </div>
+                            <div class="language-item">
+                                <span>Kannada</span>
+                                <div class="progress-bar"><div class="progress-fill" style="width: 100%;"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Manya.D. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

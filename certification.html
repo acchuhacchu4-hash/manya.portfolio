@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certifications | Manya.D</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .cert-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        .cert-card {
+            text-align: center;
+            border: 2px dashed var(--primary-color);
+            background: transparent;
+        }
+        .cert-card i {
+            font-size: 3rem;
+            color: var(--secondary-color);
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">MANYA.D</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="certification.html" class="active">Certification</a></li>
+        </ul>
+        <a href="resume.jpg" download class="btn btn-primary">Download Resume</a>
+    </nav>
+
+    <main class="container">
+        <section>
+            <h1 class="fade-in">Certifications</h1>
+            <p class="fade-in stagger-1">My professional certifications and achievements will be displayed here.</p>
+
+            <div class="cert-grid">
+                <div class="card cert-card fade-in stagger-2">
+                    <i class="fas fa-certificate"></i>
+                    <h3>Coming Soon</h3>
+                    <p>I am currently working on earning more certifications. They will be uploaded here shortly.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Manya.D. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
